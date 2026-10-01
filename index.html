@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta
+        name="description"
+        content="Surbhi Shirvatkar's portfolio: machine learning, data analytics, thoughtful applications and creative work."
+    >
+    <meta name="theme-color" content="#101b2b">
+
+    <title>Surbhi Shirvatkar | Data Science & Creative Thinking</title>
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23101b2b'/%3E%3Ctext x='7' y='28' font-size='24' font-family='Arial' fill='%23c5f46d'%3Ess%3C/text%3E%3C/svg%3E"
+    >
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a class="skip" href="#work">Skip to projects</a>
+
+    <header>
+        <a
+            class="brand"
+            href="#home"
+            aria-label="Surbhi Shirvatkar home"
+        >ss<span>.</span></a>
+
+        <nav aria-label="Main navigation">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#toolkit">Toolkit</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button id="theme" aria-label="Switch to light theme">
+            Light mode
+        </button>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-top">
+                <span class="eyebrow">
+                    SURBHI SHIRVATKAR / DATA SCIENCE
+                </span>
+                <span class="location">Based in Mumbai, India</span>
+            </div>
+
+            <div class="hero-layout">
+                <div class="hero-copy">
+                    <h1>
+                        Hi, I’m Surbhi.<br>
+                        I build with <br>
+                        <em>data & AI.</em>
+                    </h1>
+
+                    <p>
+                        A Data Science student building useful applications
+                        across machine learning, Generative AI, computer vision,
+                        and analytics.
+                    </p>
+
+                    <div class="actions">
+                        <a class="button primary" href="#work">
+                            Explore my work
+                        </a>
+                        <a
+                            class="button"
+                            href="assets/resume.pdf"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            View résumé
+                        </a>
+                    </div>
+
+                    <div class="hero-note">
+                        <span>DATA × CODE × CURIOSITY</span>
+                        <span>Scroll to explore</span>
+                    </div>
+                </div>
+
+                <div class="data-art">
+                    <canvas
+                        id="field"
+                        aria-label="Interactive abstract data field"
+                    ></canvas>
+
+                    <div class="art-top">INTERACTIVE DATA ART</div>
+
+                    <div class="art-bottom">
+                        <span>Move your pointer to explore.</span>
+                        <button id="motion" aria-pressed="false">
+                            Pause motion
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="discipline">
+                <span class="discipline-label">Areas I work in</span>
+
+                <div class="discipline-items">
+                    <span>Machine Learning</span>
+                    <span>Generative AI</span>
+                    <span>Data Analytics</span>
+                    <span>Computer Vision</span>
+                    <span>Web Applications</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="section">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">01 / SELECTED WORK</span>
+                    <h2>Ideas, put to work<span>.</span></h2>
+                </div>
+
+                <p>
+                    From noisy images to meaningful insights.<br>
+                    A selection of things I’ve built.
+                </p>
+            </div>
+
+            <div class="filters" role="group" aria-label="Filter projects">
+            <button class="active" data-filter="all" aria-pressed="true">
+                All work <span id="project-total"></span>
+            </button>
+
+            <button data-filter="AI/ML" aria-pressed="false">AI/ML</button>
+            <button data-filter="GenAI" aria-pressed="false">GenAI</button>
+            <button data-filter="Data Analytics" aria-pressed="false">
+                Data Analytics
+            </button>
+            <button data-filter="Computer Vision" aria-pressed="false">
+                Computer Vision
+            </button>
+            <button data-filter="Finance" aria-pressed="false">Finance</button>
+            <button data-filter="Forecasting" aria-pressed="false">
+                Forecasting
+            </button>
+            <button data-filter="Full Stack" aria-pressed="false">Full Stack</button>
+            </div>
+
+            <div id="projects" class="projects"></div>
+            <p id="count" class="sr-only" aria-live="polite"></p>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="portrait">
+                <img
+                    src="assets/profile.jpg"
+                    alt="Surbhi Shirvatkar"
+                    loading="lazy"
+                >
+                <span>THE PERSON BEHIND THE PROJECTS</span>
+            </div>
+
+            <div>
+                <span class="eyebrow">02 / A LITTLE ABOUT ME</span>
+
+                <h2>
+                    Analytical mind.<br>
+                    Creative instinct.
+                </h2>
+
+                <p>
+                    I enjoy the space where data, technology, and design meet.
+                    My projects span machine learning, statistical analysis,
+                    dashboards, and applications—each a chance to turn a
+                    question into something useful.
+                </p>
+
+                <p>
+                    I’m pursuing B.Tech in Data Science at NMIMS MPSTME.
+                    I like understanding the problem first, exploring the
+                    evidence, and building something people can actually use.
+                </p>
+
+                <div class="about-links">
+                    <a
+                        href="https://github.com/surbhi1us"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        GitHub
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/surbhi-shirvatkar/"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        LinkedIn
+                    </a>
+                    <a
+                        href="assets/resume.pdf"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Résumé
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="toolkit" class="section">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">03 / THE TOOLKIT</span>
+                    <h2>Tools for the question<span>.</span></h2>
+                    <p>The problem shapes the approach.</p>
+                </div>
+            </div>
+
+            <div class="tool-grid" id="skills-grid"></div>
+        </section>
+
+        <section class="section sketch">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">04 / BEYOND THE SCREEN</span>
+                    <h2>A different kind of line<span>.</span></h2>
+                </div>
+
+                <div>
+                    <p>
+                        When I’m away from code, I draw.<br>
+                        Same curiosity. A different medium.
+                    </p>
+
+                    <a
+                        class="text-link"
+                        href="https://instagram.com/artsyss_"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Sketchbook on Instagram · @artsyss_
+                    </a>
+                </div>
+            </div>
+
+            <div class="gallery">
+                <figure>
+                    <img
+                        src="assets/yunjin.jpg"
+                        alt="Pencil portrait of Yunjin drawn by Surbhi"
+                        loading="lazy"
+                    >
+                    <figcaption>Yunjin / Pencil study</figcaption>
+                </figure>
+
+                <figure>
+                    <img
+                        src="assets/niki.jpg"
+                        alt="Pencil portrait of Niki drawn by Surbhi"
+                        loading="lazy"
+                    >
+                    <figcaption>Niki / Pencil study</figcaption>
+                </figure>
+
+                <figure>
+                    <img
+                        src="assets/hyerin.jpg"
+                        alt="Pencil portrait of Hyerin drawn by Surbhi"
+                        loading="lazy"
+                    >
+                    <figcaption>Hyerin / Pencil study</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="contact-layout">
+                <div class="contact-main">
+                    <span class="eyebrow">05 / LET’S CONNECT</span>
+
+                    <h2>Let’s work<br>together.</h2>
+
+                    <p>
+                        I’d love to hear about opportunities in data science,
+                        analytics, and building useful applications.
+                    </p>
+
+                    <a class="email" href="mailto:surbhi1us@gmail.com">
+                        surbhi1us@gmail.com
+                    </a>
+
+                    <div class="contact-actions">
+                        <a
+                            class="button primary"
+                            href="mailto:surbhi1us@gmail.com"
+                        >
+                            Start a conversation
+                        </a>
+
+                        <button class="button" id="copy">Copy email</button>
+                        <span id="copy-status" role="status"></span>
+                    </div>
+                </div>
+
+                <aside class="contact-side" aria-label="Professional profiles">
+                    <span class="eyebrow">FIND ME ONLINE</span>
+
+                    <a
+                        class="contact-profile"
+                        href="https://www.linkedin.com/in/surbhi-shirvatkar/"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <span class="profile-title">LinkedIn</span>
+                        <span class="profile-description">
+                            My background and professional updates
+                        </span>
+                    </a>
+
+                    <a
+                        class="contact-profile"
+                        href="https://github.com/surbhi1us"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <span class="profile-title">GitHub</span>
+                        <span class="profile-description">
+                            Source code and project repositories
+                        </span>
+                    </a>
+
+                    <div class="contact-location">
+                        <span>BASED IN</span>
+                        <p>Mumbai, India</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a class="brand" href="#home">ss<span>.</span></a>
+        <span>© 2026 Surbhi Shirvatkar</span>
+
+        <div>
+            
+            <a href="#home">Back to top</a>
+        </div>
+    </footer>
+
+    <dialog id="detail">
+        <button
+            id="close"
+            class="close"
+            aria-label="Close project details"
+        >
+            Close ×
+        </button>
+        <div id="detail-content"></div>
+    </dialog>
+
+    <script src="app.js"></script>
+</body>
+</html>
